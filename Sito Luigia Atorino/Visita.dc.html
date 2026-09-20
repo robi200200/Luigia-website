@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-1f5e03ac-d1a9-476d-a7a1-d8b3c4f6a138/styles.css">
+<script src="_ds/modernist-1f5e03ac-d1a9-476d-a7a1-d8b3c4f6a138/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap">
+<link rel="stylesheet" href="brand.css">
+<script src="./motion.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; text-wrap: pretty; background: var(--color-bg); }
+a:hover { color: var(--color-accent-700); }
+</style>
+</helmet>
+
+<div style="--edge:clamp(20px,5vw,64px);--leading:28px;--measure:60ch;background:var(--color-bg);color:var(--color-text)">
+
+  <nav class="nav" style="padding:var(--space-3) var(--edge);gap:var(--space-6);flex-wrap:wrap;position:sticky;top:0;background:var(--color-bg);z-index:20">
+    <a class="nav-brand" href="Home.dc.html" style="display:flex;align-items:center;text-decoration:none">
+      <img class="brand-logo" src="assets/logo.png" alt="Luigia Atorino — Biologa Nutrizionista">
+    </a>
+    <div style="display:flex;align-items:center;gap:var(--space-6);flex-wrap:wrap">
+      <a href="Chi-sono.dc.html">Chi sono</a>
+      <a href="Visita.dc.html" aria-current="page">La visita</a>
+      <a href="Attivita.dc.html">Attività</a>
+      <a href="Approfondimenti.dc.html">Approfondimenti</a>
+      <a href="Contatti.dc.html">Contatti</a>
+      <a class="btn btn-primary" href="Contatti.dc.html#prenota">Prenota una visita</a>
+    </div>
+  </nav>
+
+  <header data-reveal style="padding:calc(2*var(--leading)) var(--edge) var(--leading)">
+    <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 var(--space-4)">Come funziona</p>
+    <h1 style="font-size:clamp(34px,4.8vw,64px);line-height:1.06;letter-spacing:-0.012em;max-width:24ch;margin:0">La prima visita, il piano, i controlli.</h1>
+    <p style="font-size:18px;line-height:var(--leading);max-width:var(--measure);margin:var(--leading) 0 0">Nessuna dieta fotocopia e nessun numero preso a caso: si parte da un'anamnesi completa e da misurazioni, si definiscono gli obiettivi insieme, e ci si rivede per capire se il piano sta funzionando.</p>
+  </header>
+
+  <hr class="hr" style="margin:0 var(--edge)">
+
+  <section data-reveal style="padding:calc(1.5*var(--leading)) var(--edge) calc(2*var(--leading))">
+    <div style="display:grid;grid-template-columns:minmax(64px,110px) minmax(0,300px) minmax(0,1fr);gap:var(--space-4) clamp(20px,4vw,64px);align-items:baseline;padding:var(--leading) 0">
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0;color:var(--color-accent-700)">01</p>
+      <div>
+        <h2 style="font-size:clamp(22px,2.4vw,28px);margin:0 0 var(--space-2)">Anamnesi</h2>
+        <p style="font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-neutral-700);margin:0">Primo incontro</p>
+      </div>
+      <div style="max-width:52ch">
+        <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--space-3)">Parliamo di quello che mangi davvero, degli orari, del lavoro, del sonno, dell'attività fisica, di eventuali patologie, farmaci e intolleranze. È la parte più lunga della visita, e quella che orienta tutto il resto.</p>
+        <p style="font-size:14px;margin:0;color:var(--color-neutral-800)"><strong style="font-weight:600">Porta con te:</strong> esami del sangue recenti, eventuali referti e diagnosi, l'elenco dei farmaci o integratori che assumi.</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(64px,110px) minmax(0,300px) minmax(0,1fr);gap:var(--space-4) clamp(20px,4vw,64px);align-items:baseline;border-top:1px solid var(--color-divider);padding:var(--leading) 0">
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0;color:var(--color-accent-700)">02</p>
+      <div>
+        <h2 style="font-size:clamp(22px,2.4vw,28px);margin:0 0 var(--space-2)">Misurazione</h2>
+        <p style="font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-neutral-700);margin:0">Composizione corporea</p>
+      </div>
+      <div style="max-width:52ch">
+        <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--space-3)">Valutazioni antropometriche e analisi della composizione corporea con bioimpedenzometria, pletismografia a immagine digitale e plicometria. Il peso da solo non dice quasi nulla: quello che conta è il rapporto tra massa grassa e massa magra.</p>
+        <p style="margin:0"><a href="#strumenti">Come funzionano i tre strumenti</a></p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(64px,110px) minmax(0,300px) minmax(0,1fr);gap:var(--space-4) clamp(20px,4vw,64px);align-items:baseline;border-top:1px solid var(--color-divider);padding:var(--leading) 0">
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0;color:var(--color-accent-700)">03</p>
+      <div>
+        <h2 style="font-size:clamp(22px,2.4vw,28px);margin:0 0 var(--space-2)">Piano alimentare</h2>
+        <p style="font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-neutral-700);margin:0">Compreso nella prima visita</p>
+      </div>
+      <div style="max-width:52ch">
+        <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--space-3)">Dopo aver definito obiettivi nutrizionali, ponderali e di salute, elaboro un piano alimentare personalizzato. Arriva via email, insieme al materiale informativo per approfondire quanto ci siamo detti in studio.</p>
+        <p style="font-size:14px;margin:0;color:var(--color-neutral-800)">Un piano che non si riesce a seguire è un piano sbagliato: gusti, abitudini e vincoli concreti fanno parte dei dati.</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(64px,110px) minmax(0,300px) minmax(0,1fr);gap:var(--space-4) clamp(20px,4vw,64px);align-items:baseline;border-top:1px solid var(--color-divider);padding:var(--leading) 0">
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0;color:var(--color-accent-700)">04</p>
+      <div>
+        <h2 style="font-size:clamp(22px,2.4vw,28px);margin:0 0 var(--space-2)">Controllo</h2>
+        <p style="font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-neutral-700);margin:0">Visita di controllo</p>
+      </div>
+      <div style="max-width:52ch">
+        <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--space-3)">Si ripetono le misurazioni con gli stessi strumenti e si confrontano con quelle precedenti. Da lì si capisce se il dimagrimento è di qualità, cosa sta funzionando e cosa va modificato nel piano.</p>
+        <p style="font-size:14px;margin:0;color:var(--color-neutral-800)">La frequenza dei controlli si decide insieme, in base all'obiettivo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-reveal style="border-top:1px solid var(--color-divider);padding:calc(2*var(--leading)) var(--edge)">
+    <div data-stagger style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:var(--leading) clamp(28px,5vw,72px);align-items:start">
+      <div>
+        <h2 style="font-size:clamp(24px,3vw,36px);margin:0 0 var(--space-4)">La consulenza online</h2>
+        <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--space-4);max-width:46ch">Funziona come una visita in studio, senza la parte strumentale. Almeno 30 minuti prima ricevi via SMS ed email il link per collegarti, da computer o da telefono. Tieni a portata di mano gli esami e trovati pronto una decina di minuti prima.</p>
+        <p style="font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-neutral-700);margin:0">Videoconsulto</p>
+      </div>
+      <div>
+        <h2 style="font-size:clamp(24px,3vw,36px);margin:0 0 var(--space-4)">È la prima volta?</h2>
+        <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--space-4);max-width:46ch">Porta con te gli esami del sangue recenti, gli eventuali referti e l'elenco dei farmaci o integratori che assumi. Metti in conto un'ora: l'anamnesi è la parte più lunga, e quella che orienta tutto il resto.</p>
+        <p style="margin:0"><a href="Contatti.dc.html#prenota">Dove ricevo e come prenotare</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section data-reveal id="strumenti" style="border-top:1px solid var(--color-divider);padding:calc(2*var(--leading)) var(--edge);scroll-margin-top:96px">
+    <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 var(--space-4)">Gli strumenti</p>
+    <h2 style="font-size:clamp(28px,3.6vw,44px);line-height:1.08;max-width:24ch;margin:0 0 var(--leading)">Tre metodi per misurare la composizione corporea.</h2>
+    <p style="font-size:18px;line-height:var(--leading);max-width:var(--measure);margin:0">L'analisi della composizione corporea consente di valutare la massa grassa e quella magra, risultando fondamentale per monitorare le variazioni corporee nel tempo, in particolare in seguito a interventi nutrizionali mirati.</p>
+
+    <div data-reveal style="display:grid;grid-template-columns:minmax(64px,120px) minmax(0,320px) minmax(0,1fr);gap:var(--space-4) clamp(20px,4vw,64px);align-items:baseline;border-top:1px solid var(--color-divider);padding:var(--leading) 0;margin-top:calc(1.5*var(--leading))">
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0;color:var(--color-accent-700)">01</p>
+      <h3 style="font-family:var(--font-heading);font-weight:600;font-size:clamp(22px,2.4vw,28px);margin:0">Bioimpedenzometria</h3>
+      <div style="max-width:52ch">
+        <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--space-3)">Una corrente elettrica impercettibile attraversa il corpo e incontra una resistenza diversa a seconda dei tessuti che trova. Da quella resistenza si ricava quanta acqua c'è nell'organismo e come è distribuita, e da lì massa grassa, massa magra e stato di idratazione.</p>
+        <p style="font-size:14px;margin:0;color:var(--color-neutral-800)">Non invasiva, dura pochi minuti, si svolge da distesi o in piedi.</p>
+      </div>
+    </div>
+    <div data-reveal style="display:grid;grid-template-columns:minmax(64px,120px) minmax(0,320px) minmax(0,1fr);gap:var(--space-4) clamp(20px,4vw,64px);align-items:baseline;border-top:1px solid var(--color-divider);padding:var(--leading) 0">
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0;color:var(--color-accent-700)">02</p>
+      <h3 style="font-family:var(--font-heading);font-weight:600;font-size:clamp(22px,2.4vw,28px);margin:0">Pletismografia a Immagine Digitale</h3>
+      <div style="max-width:52ch">
+        <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--space-3)">Una scansione ottica ricostruisce il volume del corpo senza alcun contatto. Dal rapporto tra volume e peso si stima la densità corporea, e quindi la proporzione tra grasso e tessuti magri.</p>
+        <p style="font-size:14px;margin:0;color:var(--color-neutral-800)">Utile per fotografare la situazione di partenza e confrontarla, visita dopo visita.</p>
+      </div>
+    </div>
+    <div data-reveal style="display:grid;grid-template-columns:minmax(64px,120px) minmax(0,320px) minmax(0,1fr);gap:var(--space-4) clamp(20px,4vw,64px);align-items:baseline;border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider);padding:var(--leading) 0">
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0;color:var(--color-accent-700)">03</p>
+      <h3 style="font-family:var(--font-heading);font-weight:600;font-size:clamp(22px,2.4vw,28px);margin:0">Plicometria</h3>
+      <div style="max-width:52ch">
+        <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--space-3)">Un calibro misura lo spessore delle pliche cutanee in punti stabiliti del corpo. È la stima più diretta del grasso sottocutaneo e dice anche dove si deposita, informazione che il solo peso non dà.</p>
+        <p style="font-size:14px;margin:0;color:var(--color-neutral-800)">Rapida, ripetibile, sempre negli stessi punti per poter confrontare i dati.</p>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:var(--leading) clamp(28px,5vw,72px);align-items:start;margin-top:calc(1.5*var(--leading))">
+      <div>
+        <h3 style="font-family:var(--font-heading);font-weight:600;font-size:clamp(22px,2.6vw,32px);margin:0 0 var(--space-4);max-width:20ch">Perché in studio li uso tutti e tre</h3>
+        <p style="font-size:17px;line-height:var(--leading);margin:0;max-width:44ch">Ogni metodica presenta vantaggi e limiti, e la scelta dipende dalle esigenze del singolo paziente. Questa varietà di strumenti consente un'analisi completa e su misura, a supporto di percorsi nutrizionali realmente efficaci.</p>
+      </div>
+      <div>
+        <p style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-neutral-700);margin:0 0 var(--space-4)">Cosa serve valutare con precisione</p>
+        <div style="display:grid;gap:0">
+          <p style="font-size:17px;line-height:var(--leading);margin:0;border-top:1px solid var(--color-divider);padding:var(--space-3) 0">L'efficacia del piano alimentare</p>
+          <p style="font-size:17px;line-height:var(--leading);margin:0;border-top:1px solid var(--color-divider);padding:var(--space-3) 0">La qualità del dimagrimento: perdita di massa grassa e mantenimento della massa magra</p>
+          <p style="font-size:17px;line-height:var(--leading);margin:0;border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider);padding:var(--space-3) 0">Il benessere generale, personalizzato in base alle caratteristiche individuali</p>
+        </div>
+      </div>
+    </div>
+
+    <sc-if value="{{ mostraFoto }}" hint-placeholder-val="{{ true }}">
+      <figure class="grayscale" style="position:relative;width:100%;aspect-ratio:21/9;margin:calc(1.5*var(--leading)) 0 0">
+        <image-slot id="strumenti-foto" shape="rect" fit="cover" placeholder="Foto della strumentazione in studio"></image-slot>
+      </figure>
+    </sc-if>
+  </section>
+
+  <section data-reveal style="background:var(--color-accent-700);color:#fbf8f0;padding:calc(2.5*var(--leading)) var(--edge)">
+    <h2 style="font-size:clamp(30px,4.4vw,56px);line-height:1.06;letter-spacing:-0.012em;max-width:22ch;margin:0">Prenota la prima visita.</h2>
+    <p style="font-size:25px;line-height:1.35;max-width:34ch;margin:var(--leading) 0 0">Scegli la sede e l'orario che ti è più comodo: Milano, Trezzano sul Naviglio oppure online.</p>
+    <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--leading)">
+      <a class="btn" href="Contatti.dc.html#prenota" style="background:#fbf8f0;color:var(--color-accent-800);border-color:#fbf8f0">Scegli data e ora</a>
+      <a class="btn" href="tel:+390289746437" style="background:transparent;color:#fbf8f0;border-color:rgba(255,253,242,0.55)">+39 02 8974 6437</a>
+    </div>
+  </section>
+
+  <footer style="padding:calc(1.5*var(--leading)) var(--edge) var(--leading);display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:var(--leading) clamp(24px,4vw,64px)">
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0 0 var(--space-2)">Studio Privato</p>
+      <p style="font-size:14px;margin:0;color:var(--color-neutral-800)">Via Privata Valentino Pasini, 21<br>20129 Milano</p>
+    </div>
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0 0 var(--space-2)">Farmacia Borsari</p>
+      <p style="font-size:14px;margin:0;color:var(--color-neutral-800)">P. Metastasio 5<br>20090 Trezzano sul Naviglio</p>
+    </div>
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0 0 var(--space-2)">Telefono</p>
+      <p style="font-size:14px;margin:0;color:var(--color-neutral-800)">Prenotazioni <a href="tel:+390289746437">02 8974 6437</a><br>Informazioni <a href="tel:+393477289544">347 728 9544</a></p>
+    </div>
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0 0 var(--space-2)">Social</p>
+      <p style="font-size:14px;margin:0;color:var(--color-neutral-800)"><a href="https://www.instagram.com/luigiaatorino/" target="_blank" rel="noopener">Instagram</a><br><a href="https://www.linkedin.com/in/luigia-atorino-84a4207b" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <div style="border-top:1px solid var(--color-divider);padding:var(--space-4) var(--edge) var(--space-8);font-size:12px;color:var(--color-neutral-700)">
+    <p style="margin:0">Dott.ssa Luigia Atorino — Biologa Nutrizionista</p>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;mostraFoto&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sezioni&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { mostraFoto: this.props.mostraFoto ?? true };
+  }
+}
+</script>
+</body>
+</html>

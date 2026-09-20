@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-1f5e03ac-d1a9-476d-a7a1-d8b3c4f6a138/styles.css">
+<script src="_ds/modernist-1f5e03ac-d1a9-476d-a7a1-d8b3c4f6a138/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap">
+<link rel="stylesheet" href="brand.css">
+<script src="./motion.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; text-wrap: pretty; background: var(--color-bg); }
+a:hover { color: var(--color-accent-700); }
+</style>
+</helmet>
+
+<div style="--edge:clamp(20px,5vw,64px);--leading:28px;--measure:60ch;background:var(--color-bg);color:var(--color-text)">
+
+  <nav class="nav" style="padding:var(--space-3) var(--edge);gap:var(--space-6);flex-wrap:wrap;position:sticky;top:0;background:var(--color-bg);z-index:20">
+    <a class="nav-brand" href="Home.dc.html" style="display:flex;align-items:center;text-decoration:none">
+      <img class="brand-logo" src="assets/logo.png" alt="Luigia Atorino — Biologa Nutrizionista">
+    </a>
+    <div style="display:flex;align-items:center;gap:var(--space-6);flex-wrap:wrap">
+      <a href="Chi-sono.dc.html" aria-current="page">Chi sono</a>
+      <a href="Visita.dc.html">La visita</a>
+      <a href="Attivita.dc.html">Attività</a>
+      <a href="Approfondimenti.dc.html">Approfondimenti</a>
+      <a href="Contatti.dc.html">Contatti</a>
+      <a class="btn btn-primary" href="Contatti.dc.html#prenota">Prenota una visita</a>
+    </div>
+  </nav>
+
+  <header data-reveal style="padding:calc(2*var(--leading)) var(--edge) var(--leading)">
+    <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 var(--space-4)">Chi sono</p>
+    <h1 style="font-size:clamp(34px,4.8vw,64px);line-height:1.06;letter-spacing:-0.012em;max-width:26ch;margin:0">Una formazione da ricercatrice, applicata a quello che mangi ogni giorno.</h1>
+  </header>
+
+  <hr class="hr" style="margin:0 var(--edge)">
+
+  <section data-reveal style="padding:calc(1.5*var(--leading)) var(--edge) calc(2*var(--leading));display:grid;grid-template-columns:minmax(0,1.3fr) minmax(220px,0.7fr);gap:var(--leading) clamp(28px,5vw,72px);align-items:start">
+    <div style="max-width:var(--measure)">
+      <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--leading)">Una Laurea in Scienze Biologiche, un Dottorato di Ricerca in Chimica Biologica e Biologia Molecolare, un Master in Giornalismo Scientifico e un Master in Scienza dell'Alimentazione e Dietetica Applicata: è su questa formazione che è basato il mio attuale lavoro nel campo dell'alimentazione, come Nutrizionista.</p>
+      <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--leading)">A seguito di un'approfondita anamnesi nutrizionale e dello stile di vita, determino lo stato nutrizionale mediante valutazioni antropometriche e analisi della composizione corporea del paziente. L'analisi della composizione corporea consente di valutare la massa grassa e quella magra, risultando fondamentale per monitorare le variazioni corporee nel tempo, in particolare in seguito a interventi nutrizionali mirati.</p>
+      <p style="font-size:17px;line-height:var(--leading);margin:0">Dopo aver definito obiettivi nutrizionali, ponderali e di salute, elaboro un piano alimentare personalizzato ed effettuo controlli periodici per monitorare i progressi.</p>
+    </div>
+    <sc-if value="{{ mostraFoto }}" hint-placeholder-val="{{ true }}">
+      <div class="grayscale" style="position:relative;width:100%;aspect-ratio:4/5">
+        <image-slot id="chisono-ritratto" shape="rect" fit="cover" placeholder="Ritratto in studio"></image-slot>
+      </div>
+    </sc-if>
+  </section>
+
+  <section data-reveal style="border-top:1px solid var(--color-divider);padding:calc(2*var(--leading)) var(--edge)">
+    <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 var(--leading)">Formazione</p>
+    <table class="table">
+      <thead>
+        <tr><th style="width:42%">Titolo</th><th>Ambito</th></tr>
+      </thead>
+      <tbody>
+        <tr><td style="font-weight:600">Laurea in Scienze Biologiche</td><td>Biologia</td></tr>
+        <tr><td style="font-weight:600">Dottorato di Ricerca</td><td>Chimica Biologica e Biologia Molecolare</td></tr>
+        <tr><td style="font-weight:600">Master</td><td>Scienza dell'Alimentazione e Dietetica Applicata</td></tr>
+        <tr><td style="font-weight:600">Master</td><td>Giornalismo Scientifico</td></tr>
+      </tbody>
+    </table>
+    <div data-stagger style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--leading) clamp(24px,4vw,64px);margin-top:calc(1.5*var(--leading))">
+      <div>
+        <p style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-neutral-700);margin:0 0 var(--space-2)">Atenei</p>
+        <p style="font-size:15px;margin:0">Università degli Studi Federico II di Napoli<br>Università degli Studi di Roma Unitelma Sapienza</p>
+      </div>
+      <div>
+        <p style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-neutral-700);margin:0 0 var(--space-2)">Lingue</p>
+        <p style="font-size:15px;margin:0">Italiano<br>Inglese</p>
+      </div>
+      <div>
+        <p style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-neutral-700);margin:0 0 var(--space-2)">Area di competenza</p>
+        <p style="font-size:15px;margin:0">Scienze dell'alimentazione<br>Adulti e bambini</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-reveal style="border-top:1px solid var(--color-divider);padding:calc(2*var(--leading)) var(--edge)">
+    <div data-stagger style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--leading) clamp(28px,5vw,72px);align-items:start">
+      <div>
+        <h2 style="font-size:clamp(24px,2.8vw,32px);margin:0 0 var(--space-4)">Divulgazione</h2>
+        <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--space-4);max-width:46ch">Il Master in Giornalismo Scientifico non è un titolo decorativo: scrivo di alimentazione per Corriere Style, dove provo a distinguere le evidenze dai luoghi comuni.</p>
+        <p style="margin:0"><a href="Approfondimenti.dc.html">Leggi gli articoli</a></p>
+      </div>
+      <div>
+        <h2 style="font-size:clamp(24px,2.8vw,32px);margin:0 0 var(--space-4)">Dove mi trovi</h2>
+        <p style="font-size:17px;line-height:var(--leading);margin:0 0 var(--space-4);max-width:46ch">Ricevo in studio a Milano, in Farmacia Borsari a Trezzano sul Naviglio e in videoconsulto da qualsiasi città.</p>
+        <div style="display:flex;gap:var(--space-3);flex-wrap:wrap">
+          <a class="btn btn-primary" href="Contatti.dc.html#prenota">Prenota una visita</a>
+          <a class="btn btn-secondary" href="Contatti.dc.html">Contatti</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid var(--color-divider);padding:calc(1.5*var(--leading)) var(--edge) var(--leading);display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:var(--leading) clamp(24px,4vw,64px)">
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0 0 var(--space-2)">Studio Privato</p>
+      <p style="font-size:14px;margin:0;color:var(--color-neutral-800)">Via Privata Valentino Pasini, 21<br>20129 Milano</p>
+    </div>
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0 0 var(--space-2)">Farmacia Borsari</p>
+      <p style="font-size:14px;margin:0;color:var(--color-neutral-800)">P. Metastasio 5<br>20090 Trezzano sul Naviglio</p>
+    </div>
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0 0 var(--space-2)">Telefono</p>
+      <p style="font-size:14px;margin:0;color:var(--color-neutral-800)">Prenotazioni <a href="tel:+390289746437">02 8974 6437</a><br>Informazioni <a href="tel:+393477289544">347 728 9544</a></p>
+    </div>
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:15px;margin:0 0 var(--space-2)">Social</p>
+      <p style="font-size:14px;margin:0;color:var(--color-neutral-800)"><a href="https://www.instagram.com/luigiaatorino/" target="_blank" rel="noopener">Instagram</a><br><a href="https://www.linkedin.com/in/luigia-atorino-84a4207b" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <div style="border-top:1px solid var(--color-divider);padding:var(--space-4) var(--edge) var(--space-8);font-size:12px;color:var(--color-neutral-700)">
+    <p style="margin:0">Dott.ssa Luigia Atorino — Biologa Nutrizionista</p>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;mostraFoto&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sezioni&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { mostraFoto: this.props.mostraFoto ?? true };
+  }
+}
+</script>
+</body>
+</html>
