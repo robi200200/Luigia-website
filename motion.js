@@ -1,6 +1,27 @@
+/* Menu a scomparsa su smartphone */
+(function () {
+  if (window.__navToggleBound) return;
+  window.__navToggleBound = true;
+  var root = document.documentElement;
+  function setOpen(open) {
+    root.classList.toggle('nav-open', open);
+    var b = document.querySelectorAll('.nav-toggle');
+    for (var i = 0; i < b.length; i++) b[i].setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    if (!t || !t.closest) return;
+    if (t.closest('.nav-toggle')) { setOpen(!root.classList.contains('nav-open')); return; }
+    if (t.closest('.nav-links a') || !t.closest('.nav')) setOpen(false);
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+})();
+
 /* Rivelazione progressiva delle sezioni + stato della barra di navigazione.
    Regole di sicurezza: se qualcosa non parte, il contenuto torna comunque visibile. */
 (function () {
+  if (window.__motionBound) return;
+  window.__motionBound = true;
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   var root = document.documentElement;
